@@ -217,48 +217,6 @@ The sidebar converts to a mobile drawer on smaller screens.
    - Role management
    - Permissions
 
-## 🎯 Key Features Explained
-
-### State Management
-The app uses React Context API for global state:
-- **ThemeContext** - Dark/Light mode
-- **DataContext** - All CRUD operations
-- **NotificationContext** - Toast messages
-
-### CRUD Operations
-All CRUD operations automatically update the data and trigger success notifications:
-
-```javascript
-// Example: Adding a member
-const handleAddMember = (memberData) => {
-  addMember(memberData);
-  // Automatically shows success notification
-  // Updates the members list
-  // Closes the modal
-};
-```
-
-### Notifications
-Toast notifications appear for all user actions:
-- Success (green)
-- Error (red)
-- Warning (yellow)
-- Info (blue)
-
-### Search & Filter
-Members and payments pages include:
-- Real-time search
-- Status filtering
-- Pagination for large datasets
-
-## 🎨 Design Philosophy
-
-This dashboard follows modern SaaS design principles:
-- **Minimalist** - Clean layouts with generous white space
-- **Consistent** - Unified color scheme and component styling
-- **Accessible** - High contrast, readable fonts
-- **Professional** - Business-ready interface
-- **Interactive** - Hover effects and smooth transitions
 
 ## 🔐 Future Enhancements
 
@@ -271,22 +229,6 @@ Potential improvements:
 - Email notifications
 - Multi-language support
 - Mobile app version
-
-## 📝 License
-
-This project is provided as-is for educational and commercial use.
-
-## 🤝 Support
-
-For questions or issues:
-1. Check the code comments
-2. Review the component structure
-3. Examine the data.json format
-4. Test CRUD operations in the browser console
-
-## 🎉 Credits
-
-Built with modern web technologies and best practices. Designed for gym owners, fitness centers, and health clubs looking for a professional management solution.
 
 ---
 
